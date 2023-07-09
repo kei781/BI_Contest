@@ -1,8 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1> 이 프로젝트는 산업통상자원부 공공데이터 활용 비즈니스아이디어 공모전  프로젝트입니다.</h1>
+...만, 기획서가 통과되지 않는다면, 개인 프로젝트가 될 예정입니다.
 
-## Getting Started
+<h1> 이프로젝트는 특정 백엔드 프로젝트에 종속적입니다. 해당 패키지는 <a href="#">이 경로를</a> 통하여 다운로드 받아주세요.</h1>
 
-First, run the development server:
+<h2> 이 프로젝트는 백엔드에서 ai알고리즘을 통한 예측데이터, 수집, 후가공 처리한 데이터를 기반으로 b2c, b2b 사용자에게 시각화 데이터를 제공하는 것에 초점을 두고 제작되었습니다. </h2>
+
+1. 기본정보
+테스트 명령어 : npm run dev
+테스트 주소 : localhost:3000
+
+2. 실행순서 : 
+해당 프로젝트 클론(git clone http://이 프로젝트 주소)
+패키지 설치 (npm i)
+프로젝트 실행(npm run dev)
+프론트 엔드 접속(https://localhost:3000)
+
 
 ```bash
 npm run dev
@@ -11,24 +23,3 @@ yarn dev
 # or
 pnpm dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
