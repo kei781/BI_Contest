@@ -7,9 +7,9 @@ export default ({value, onChange, placeholder, width, height}) =>{
     </div>
     <style jsx>{`
       .frame{
-        width: ${width? width :`180px`}; height: ${height? height : `32px`};
+        width: ${width}px; height: ${height}px;
         display: flex; justify-content: flex-end; align-items: center;
-        padding: 4px 0px 4px 2px;
+        padding: 4px 0px 4px 6px;
         gap: 5px;
         border: 1px solid #000; border-radius: 5px;
         background: #FFF;
@@ -19,15 +19,13 @@ export default ({value, onChange, placeholder, width, height}) =>{
         height: 100%;
         border: 0;
         outline: none;
+        color: black;
+        font-size: 8px;
       }
-      input::placeholder{
+      .textArea::placeholder {
         color: rgba(0, 0, 0, 0.20);
-        font-family: Noto Sans KR;
         font-size: 8px;            
         font-weight: 700;
-      }
-      .textArea:focus{
-        border: 0;
       }
       .icon{
         width: 24px; height: 24px;
