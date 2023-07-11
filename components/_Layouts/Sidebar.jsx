@@ -17,26 +17,26 @@ export default () =>{
     <a href="#" className="BtnTest">
       <img src="/compoenets/_Layouts/sidebar/enterprise.svg" alt="" className="img"/> 
       {
-        widthExtension ? <><Distans width={WIDTH}/> <span>todo</span></> : ''
+        widthExtension ? <><Distans width={WIDTH}/> <span className="text">todo</span></> : ''
       }
     </a>
     <div className="contents">
       <a href="#" className="BtnTest">
         <img src="/compoenets/_Layouts/sidebar/community.svg" alt="community" className="img"/> 
         {
-          widthExtension ? <><Distans width={WIDTH}/> <span>todo</span></> : ''
+          widthExtension ? <><Distans width={WIDTH}/> <span className="text">todo</span></> : ''
         }
       </a>
       <a href="#" className="BtnTest">
         <img src="/compoenets/_Layouts/sidebar/info.svg" alt="info" className="img"/> 
         {
-          widthExtension ? <><Distans width={WIDTH}/> <span>todo</span></> : ''
+          widthExtension ? <><Distans width={WIDTH}/> <span className="text">todo</span></> : ''
         }
       </a>
       <a href="#" className="BtnTest">
         <img src="/compoenets/_Layouts/sidebar/payment.svg" alt="payment" className="img"/> 
         {
-          widthExtension ? <><Distans width={WIDTH}/> <span>todo</span></> : ''
+          widthExtension ? <><Distans width={WIDTH}/> <span className="text">todo</span></> : ''
         }
       </a>
     </div>
@@ -68,7 +68,9 @@ export default () =>{
       display: flex; flex-direction: column;
       gap: 10px;
     }
-    
+    .text{
+      font-size: 14px; font-weight: 500;
+    }
     
   `}</style> 
   </>
