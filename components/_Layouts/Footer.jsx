@@ -1,4 +1,5 @@
 import 'normalize.css';
+import Bar from '../../modules/assets/Bar';
 
 export default () =>{
 
@@ -7,8 +8,11 @@ export default () =>{
     <div>
       <ul className='footerLinks'>
         <li><a href='#'>사이트 소개</a></li>
+        <Bar />
         <li><a href='#'>이용약관</a></li>
+        <Bar />
         <li><a href='#'>개인정보 처리 방침</a></li>
+        <Bar />
         <li><a href='#'>문의/제휴</a></li>
       </ul>
       <div className='footerinfo'>
@@ -27,21 +31,19 @@ export default () =>{
   </footer>
   <style jsx>{`
     footer{
-      width: calc(100% - 60px); 
+      width:  calc(100% - 70px) ;  min-width: calc(800px - 70px);
       display: flex; justify-content: space-between; align-items: center;
-      padding: 20px; padding-left: 40px;
+      box-sizing: border-box; padding: 20px;
       border-top: 0.5px solid #FFF;
       background-color: #222222;
+      position: absolute; bottom: 0;
     }
     .footerLinks{
-      display: flex;
+      display: flex; align-items: center;
       gap: 10px;
       padding: 10px;
       color: #FFF;
       font-size: 14px; font-weight: 500;
-    }
-    .footerLinks > li > a{
-
     }
     .footerinfo{
       display: flex; align-items: flex-start; flex-direction: column;

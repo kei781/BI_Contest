@@ -4,9 +4,9 @@ import InputText from "../../modules/input/InputText"
 
 export default () =>{
   return <>
-  <header>
+  <header className="frame">
     <div className="flex">
-      <img src="/compoenets/header/logo.svg" alt="로고이미지" />
+      <img src="/compoenets/_Layouts/header/logo.svg" alt="로고이미지" />
       <Distans width={20} />
       <InputText placeholder={"거주 지역을 검색해 보세요!"} width={"150"}/>
       <Distans width={20} />
@@ -20,17 +20,20 @@ export default () =>{
     </div>
 
     <div className="flex">
-      <img src="/compoenets/header/user.svg" alt="유저아이콘" />
+      <img src="/compoenets/_Layouts/header/user.svg" alt="유저아이콘" />
       <Distans width={15} />
       <ButtonBasic value={`노상운`}/>
     </div>
   </header>
   <style jsx>{`
+    .frame{
+      min-width: calc(800px - 10px);
+    }
     header{
       height: 60px;
       background-color: #222;
       display: flex; justify-content: space-between; align-items: center;
-      padding: 0px 5px;
+      box-sizing: border-box; padding: 0px 5px;
     }
     .flex{
       display: flex; justify-content: center; align-items: center;
