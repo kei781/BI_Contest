@@ -31,7 +31,7 @@ export default () =>{
   </footer>
   <style jsx>{`
     footer{
-      width:  calc(100% - 70px) ;  min-width: calc(800px - 70px);
+      width:  calc(100% - 70px) ;  min-width: calc(800px - 70px); height: 200px;
       display: flex; justify-content: space-between; align-items: center;
       box-sizing: border-box; padding: 20px;
       border-top: 0.5px solid #FFF;

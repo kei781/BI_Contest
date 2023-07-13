@@ -7,23 +7,35 @@ export default ({ Component, pageProps }) =>{
   return <>
     <div className="frame">
       <Header />
-      <Sidebar />
-      <div className="Layouts">
-        <Component {...pageProps}/>   
-        <Footer />
+      <div className="scfLayout">
+        <Sidebar />
+        <div className="cfLayout">
+          <div className="cLayout">
+            <Component {...pageProps}/>
+          </div>
+          <Footer />
+        </div>
       </div>
     </div>
     <style jsx>{`
       .frame{
         width: 100%; height: 100%;
         background-color: black;
-        {/*  min-height: 800px; */}
       }
-      .Layouts{
-        height: calc(100% - 70px);
-        padding-left: 70px;
+      .scfLayout{
+        position: absolute;
+        min-height: calc(100% - 60px);
+        min-width: 100%;
         display: flex; 
-        {/* min-height: 630px;  */}
+      }
+      .cfLayout{
+        position: absolute;
+        min-width: calc(100% - 70px); min-height: 100%;
+        padding-left: 70px;
+      }
+      .cLayout{
+        position: absolute;
+        min-width: calc(100% - 70px); min-height: calc(100% - 200px);
       }
    `}</style> 
   </>

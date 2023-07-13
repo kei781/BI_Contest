@@ -11,7 +11,7 @@ export default () =>{
     <div className="Btn">
       <img src="/compoenets/_Layouts/sidebar/burger.svg" alt="menuOpen" className="img" onClick={() => {setWidthExtension(true)}}/>
       {
-        widthExtension ? <><span>Menu</span> <img src="/compoenets/_Layouts/sidebar/xbox.svg" alt="menuClose"  height={21} width={21} onClick={() => {setWidthExtension(false)}}/> </>: ''
+        widthExtension ? <><span>Menu</span> <img src="/compoenets/_Layouts/sidebar/xbox.svg" alt="menuClose"  height={21} width={21} onClick={() => {setWidthExtension(false)}} style={{"cursor": "pointer"}}/> </>: ''
       }
     </div>
     <a href="#" className="BtnTest">
@@ -43,7 +43,7 @@ export default () =>{
   </div>
   <style jsx>{`
     .frame{
-      width: ${widthExtension ? 180 : 70}px; height: calc(100% - 60px); 
+      width: ${widthExtension ? 180 : 70}px; min-height: calc(100%); 
       display: flex; flex-direction: column;
       gap: 15px;
       z-index: 3;
@@ -56,7 +56,7 @@ export default () =>{
       background-color: #222;
     }
     .img{
-      width : 30px; height: 30px;
+      width : 30px; height: 30px; cursor: pointer;
     }
     .Btn{
       display: flex; justify-content: space-between; align-items: center;

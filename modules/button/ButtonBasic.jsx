@@ -5,7 +5,7 @@ export default ({value, onChange, width, heigth}) =>{
   </div>
   <style jsx>{`
     .frame{
-      width: ${width} ; height: ${heigth} ;
+      width: ${width}px ; height: ${heigth}px ;
       display: flex; justify-content: center; align-items: center; flex-direction: column;
       padding: 2px 8px;
       border: 1px solid #FFF; border-radius: 8px;
